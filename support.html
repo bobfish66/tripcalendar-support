@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>行程日历 · 技术支持</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { margin: 0; padding: 28px 20px 64px; font-family: -apple-system, "PingFang SC", "Helvetica Neue", Arial, sans-serif; line-height: 1.75; color: #1c1c1e; background: #f7f7f9; }
+  main { max-width: 720px; margin: 0 auto; background: #fff; border-radius: 16px; padding: 28px 24px; box-shadow: 0 2px 16px rgba(0,0,0,.06); }
+  h1 { font-size: 24px; margin: 0 0 6px; }
+  .meta { color: #6b6b70; font-size: 13px; margin-bottom: 22px; }
+  h2 { font-size: 17px; margin: 26px 0 8px; padding-left: 10px; border-left: 4px solid #10b981; }
+  h3 { font-size: 15px; margin: 16px 0 4px; }
+  p, li { font-size: 15px; }
+  ul, ol { padding-left: 22px; }
+  .card { background: #f2f6ff; border-radius: 12px; padding: 14px 16px; margin: 14px 0; }
+  .mail { font-weight: 600; }
+  footer { max-width: 720px; margin: 18px auto 0; color: #8a8a8f; font-size: 12px; text-align: center; }
+  a { color: #2563eb; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #0f0f11; color: #e6e6ea; }
+    main { background: #17171a; box-shadow: none; }
+    .card { background: #1e2532; }
+    .meta, footer { color: #9a9aa2; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>行程日历 · 技术支持</h1>
+  <div class="meta">应用名称：行程日历（TripCalendar）&nbsp;|&nbsp;版本 1.0&nbsp;|&nbsp;需要 iOS 17.0 或更高版本</div>
+
+  <div class="card">
+    <strong>需要帮助？</strong><br>
+    请发送邮件至 <span class="mail"><a href="mailto:bobfish66@163.com?subject=%E8%A1%8C%E7%A8%8B%E6%97%A5%E5%8E%86%20%E5%8F%8D%E9%A6%88">bobfish66@163.com</a></span>，邮件标题建议注明「行程日历 反馈」，并附上你的 iOS 版本与问题描述，我们会在 7 个工作日内回复。
+  </div>
+
+  <h2>一、这个 App 能做什么</h2>
+  <ul>
+    <li><strong>行程记录</strong>：手工录入或拍摄纸质通知自动识别，记录日期、时间、地点、人员、事件、备注与执行评分。</li>
+    <li><strong>日历视图</strong>：按月份查看每天安排，点选具体日期查看当日行程。</li>
+    <li><strong>报告生成</strong>：一键生成日报告、周报告、月报告，以及工作周报 / 工作月报，可复制文本或导出为 .md 文件。</li>
+    <li><strong>日历同步</strong>：把行程写入系统日历（含提醒），或把系统日历事件导入为行程。</li>
+  </ul>
+
+  <h2>二、常见问题</h2>
+
+  <h3>Q1：拍摄照片后没有自动填上日期？</h3>
+  <p>文字识别依赖图片清晰度。请确保单据上的日期时间完整可见、避免反光与倾斜；识别完成后可点「自动识别要素」重新解析，或直接手动选择日期与时间。</p>
+
+  <h3>Q2：点了「行程写入系统日历」没有反应？</h3>
+  <p>请先在「设置」页确认日历权限为「已授权」。若此前拒绝过权限，需前往系统「设置 → 隐私与安全性 → 日历」为「行程日历」打开开关；同时请确认系统「日历」App 中至少存在一个可写日历。</p>
+
+  <h3>Q3：从系统日历导入时提示没有新事件？</h3>
+  <p>导入会跳过两类事件：已经导入过的同一事件，以及与已有行程（同日期、同时间、同标题）重复的条目。可调整「导入范围」为更长的区间（近 3 / 6 / 12 个月）后再试。</p>
+
+  <h3>Q4：数据会丢吗？换手机怎么迁移？</h3>
+  <p>全部数据保存在本机，不上传服务器，因此卸载 App 会一并删除。建议定期用「报告 → 分享」导出内容留存；换机时可通过系统备份恢复，或将关键内容以 .md 文件导出保存。</p>
+
+  <h3>Q5：报告可以自定义格式吗？</h3>
+  <p>当前报告为固定模板（Markdown 格式，含统计计数、按日分组、小结与计划）。你可以导出后自行编辑。如需要新的报告类型，欢迎邮件告诉我们。</p>
+
+  <h3>Q6：App 需要联网吗？</h3>
+  <p>不需要。除打开本帮助页与隐私政策页外，所有功能均可离线使用。</p>
+
+  <h2>三、系统要求</h2>
+  <ul>
+    <li>iOS 17.0 及以上版本</li>
+    <li>iPhone 与 iPad 均可使用</li>
+    <li>可选权限：日历、相机、照片</li>
+  </ul>
+
+  <h2>四、隐私</h2>
+  <p>本 App 不收集任何个人信息。详情请见 <a href="privacy.html">隐私政策</a>。</p>
+
+  <h2>五、关于开发者</h2>
+  <p>开发者：Liang Bao（个人开发者）<br>
+  联系邮箱：<a href="mailto:bobfish66@163.com">bobfish66@163.com</a></p>
+</main>
+<footer>© 2026 行程日历 · 本页面为 App Store 所需的技术支持说明页</footer>
+</body>
+</html>
