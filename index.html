@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>行程日历 TripCalendar</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 32px 20px; font-family: -apple-system, "PingFang SC", "Helvetica Neue", Arial, sans-serif; background: linear-gradient(160deg, #2563eb, #10b981); color: #1c1c1e; }
+  .wrap { max-width: 640px; width: 100%; background: #fff; border-radius: 20px; padding: 34px 28px; box-shadow: 0 10px 40px rgba(0,0,0,.18); }
+  h1 { font-size: 26px; margin: 0 0 4px; }
+  .sub { color: #6b6b70; font-size: 14px; margin-bottom: 22px; }
+  ul { padding-left: 22px; line-height: 1.8; font-size: 15px; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+  a.btn { flex: 1 1 200px; text-align: center; padding: 12px 16px; border-radius: 12px; text-decoration: none; font-weight: 600; font-size: 15px; }
+  a.primary { background: #2563eb; color: #fff; }
+  a.ghost { background: #eef2ff; color: #1d4ed8; }
+  footer { margin-top: 22px; color: #8a8a8f; font-size: 12px; text-align: center; }
+  @media (prefers-color-scheme: dark) {
+    .wrap { background: #17171a; color: #e6e6ea; }
+    .sub, footer { color: #9a9aa2; }
+    a.ghost { background: #23232a; color: #9ec1ff; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>行程日历</h1>
+  <div class="sub">本地行程记录 · 日历同步 · 报告一键生成&nbsp;|&nbsp;iOS 17.0+</div>
+  <ul>
+    <li>手工录入或拍照识别，自动提取日期、时间、地点、人员与备注</li>
+    <li>月历视图速览每天安排，支持按类型筛选与关键词搜索</li>
+    <li>日报 / 周报 / 月报与工作周报 / 工作月报，Markdown 一键导出</li>
+    <li>与系统日历双向互通，行程写入带提醒，日历事件导入免重录</li>
+    <li>数据仅存本机，不联网、不收集、不追踪</li>
+  </ul>
+  <div class="links">
+    <a class="btn primary" href="support.html">技术支持与常见问题</a>
+    <a class="btn ghost" href="privacy.html">隐私政策</a>
+  </div>
+  <footer>© 2026 行程日历 · 开发者 Liang Bao · bobfish66@163.com</footer>
+</div>
+</body>
+</html>
